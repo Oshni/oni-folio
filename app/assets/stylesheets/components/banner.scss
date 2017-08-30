@@ -8,21 +8,17 @@
   > .image:nth-child(1) {
     z-index: 200;
     align-self: center;
-    width: 700px;
-  }
-
-  > .image:nth-child(1) {
-    z-index: 200;
-    align-self: center;
-    width: 700px;
+    width: 600px;
+    margin-top: 10px;
   }
 
   > .image:nth-child(2) {
+    margin-top: 10px;
     position: absolute;
     z-index: 100;
     align-self: center;
-    width: 700px;
-    animation: mask 3s ease-in-out 0s infinite;
+    width: 600px;
+    animation: mask 5s ease-in-out 0s infinite;
   }
 
   @keyframes mask {
@@ -31,48 +27,36 @@
       opacity: 0;
     }
 
-    25% {
+    20% {
       transform: scale(1.1);
       opacity: 0.3;
     }
 
-    50% {
+    40% {
       transform: scale(1.1);
       opacity: 0;
     }
 
-    75% {
-      transform: scale(1);
+    60% {
+      transform: scale(1.1);
+      opacity: 0.3;
+    }
+
+    80% {
+      transform: scale(1.1);
       opacity: 0;
     }
 
     100% {
       transform: scale(1.1);
-      opacity: 0.3;
+      opacity: 0;
     }
   }
-}
 
-.banner-texts {
-  position: absolute;
-  top: 24em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-transform: uppercase;
+  > .image:nth-child(3) {
+    position: absolute;
+    top: 0;
+    width: 100%;
 
-  .title:nth-child(1) {
-    font-size: 11em;
-    letter-spacing: 1em;
-    font-weight: 500;
-    padding-left: 70px;
   }
-
-  .title:nth-child(2) {
-    font-size: 2em;
-    letter-spacing: 2.5em;
-    margin-top: -48px;
-    font-weight: 600;
-  }
-
 }

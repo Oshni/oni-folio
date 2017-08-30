@@ -1,7 +1,7 @@
 class PortfoliosController < ApplicationController
 
 
-  def index 
+  def index
 
   end
 
