@@ -12,6 +12,21 @@
     align-self: center;
     width: 700px;
     top: 10px;
+    animation: float 5s ease-in-out 0s infinite;
+  }
+
+  @keyframes float {
+    0% {
+      top: 10px;
+    }
+
+    50% {
+      top: 30px;
+    }
+
+    100% {
+      top: 10px;
+    }
   }
 
   > .image:nth-child(2) {
