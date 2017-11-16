@@ -35,6 +35,7 @@ gem 'sprockets-rails'
 gem 'bootstrap', '~> 4.0.0.beta'
 gem 'ionicons-rails'
 gem 'jquery-rails'
+gem 'mongoid', '~> 6.2.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

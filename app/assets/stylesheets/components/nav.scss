@@ -4,13 +4,15 @@
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  text-align: center;
 
   > a {
     text-transform: uppercase;
     font-weight: bold;
     color: black;
     text-decoration: none;
-    text-shadow:1px 1px 8px #fff;
+    text-shadow: 1px 1px 8px #fff;
+    padding: 20px 0;
   }
 
   > a:hover {

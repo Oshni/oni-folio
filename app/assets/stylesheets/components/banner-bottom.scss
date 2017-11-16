@@ -13,13 +13,18 @@
 
   > .image:nth-child(2) {
     position: absolute;
-    margin-top: 365px;
+    margin-top: 140px;
     width: 400px;
   }
+}
 
+.links {
+  position: absolute;
+  top: 45em;
+  z-index: 1000;
+  width: 100%;
+}
 
-  > .links {
-    position: absolute;
-    top: 520px;
-  }
+.intro {
+  font-size: 2em;
 }
