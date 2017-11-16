@@ -12,6 +12,14 @@
     = image_tag "heart.png", class: 'image'
 
   .links
-    = render "shared/nav"
+    / = render "shared/nav"
 
-    .container.intro It is a method of influencing people to think about what they see more deeply. Fascinated by the wanders of which is not seen by the naked eye. By means of concise communication understanding and vision, we share who we are.
+    =link_to '', class: 'behance-btn pulse-fx',href: "https://www.behance.net/oznai01", target: "_blank" do
+      =image_tag 'behance-logo.png', class: 'icon'
+
+    %p Click Here to view Projects
+
+    .container.intro
+      %p It is a method of influencing people to think about what they see more deeply.
+      %p Fascinated by the wanders of which is not seen by the naked eye. By means of concise communication,
+      %p understanding and vision, we share who we are.

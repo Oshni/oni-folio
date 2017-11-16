@@ -1,0 +1,58 @@
+/* video button */
+
+.behance-btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  transition: .3s ease;
+  height: 50px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  
+  &:hover {
+    border: none;
+    background: none;
+  }
+  
+  &:after, &:before {
+    content: "";
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .icon {
+    height: 35px;
+    z-index: 100;
+  }
+}
+
+.pulse-fx:hover {
+  transition: .3s ease;
+  &:before, &:after {
+    background: #000;
+    animation: pulse 2s linear infinite;
+    position: absolute;
+  }
+  &:after {
+    animation: pulse 3s linear infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: .3;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
